@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/dimiro1/health.svg?branch=master)](https://travis-ci.org/dimiro1/health)
-[![Go Report Card](https://goreportcard.com/badge/github.com/dimiro1/health)](https://goreportcard.com/report/github.com/dimiro1/health)
-[![GoDoc](https://godoc.org/github.com/dimiro1/health?status.svg)](https://godoc.org/github.com/dimiro1/health)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cloudacademy/health)](https://goreportcard.com/report/github.com/cloudacademy/health)
+[![GoDoc](https://godoc.org/github.com/cloudacademy/health?status.svg)](https://godoc.org/github.com/cloudacademy/health)
 
-Try browsing [the code on Sourcegraph](https://sourcegraph.com/github.com/dimiro1/health)!
+Try browsing [the code on Sourcegraph](https://sourcegraph.com/github.com/cloudacademy/health)!
 
 # Go Health Check
 
@@ -30,10 +30,10 @@ import (
     "database/sql"
     "time"
 
-    "github.com/dimiro1/health"
-    "github.com/dimiro1/health/url"
-    "github.com/dimiro1/health/db"
-    "github.com/dimiro1/health/redis"
+    "github.com/cloudacademy/health"
+    "github.com/cloudacademy/health/url"
+    "github.com/cloudacademy/health/db"
+    "github.com/cloudacademy/health/redis"
     _ "github.com/go-sql-driver/mysql"
 )
 
@@ -148,7 +148,7 @@ I took a lot of ideas from the [spring framework](http://spring.io/).
 This package is a go getable package.
 
 ```sh
-$ go get github.com/dimiro1/health
+$ go get github.com/cloudacademy/health
 ```
 
 # API
@@ -167,7 +167,7 @@ $ go get github.com/rafaeljusto/redigomock
 or you can go get this package with the -t flag
 
 ```sh
-go get -t github.com/dimiro1/health
+go get -t github.com/cloudacademy/health
 ```
 
 # Implementing custom checkers
@@ -237,9 +237,13 @@ The **status** key in the json has priority over a **status** key added by a Che
 
 | Health         | Description                            | Package                                              |
 |----------------|----------------------------------------|------------------------------------------------------|
-| url.Checker    | Check the connection with some URL     | https://github.com/dimiro1/health/tree/master/url    |
-| db.Checker     | Check the connection with the database | https://github.com/dimiro1/health/tree/master/db     |
-| redis.Checker  | Check the connection with the redis    | https://github.com/dimiro1/health/tree/master/redis  |
+| url.Checker    | Check the connection with some URL     | https://github.com/cloudacademy/health/tree/master/url    |
+| db.Checker     | Check the connection with the database | https://github.com/cloudacademy/health/tree/master/db     |
+| redis.Checker  | Check the connection with the redis    | https://github.com/cloudacademy/health/tree/master/redis  |
+
+# Author
+
+This package has been forked from https://github.com/dimiro1/health. I'd like to thank the user dimiro1 for the original work!
 
 # LICENSE
 

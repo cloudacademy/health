@@ -1,6 +1,6 @@
 package redis
 
-import "github.com/dimiro1/health"
+import "github.com/cloudacademy/health"
 
 // Redis is a interface used to abstract the access of the Version string
 type Redis interface {

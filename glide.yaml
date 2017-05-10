@@ -1,4 +1,4 @@
-package: github.com/dimiro1/health
+package: github.com/cloudacademy/health
 import:
 - package: github.com/garyburd/redigo
   subpackages:

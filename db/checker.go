@@ -3,7 +3,7 @@ package db
 import (
 	"database/sql"
 
-	"github.com/dimiro1/health"
+	"github.com/cloudacademy/health"
 )
 
 // Checker is a checker that check a database connection
